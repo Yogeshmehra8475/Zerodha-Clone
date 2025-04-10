@@ -2,7 +2,11 @@ import React from 'react';
 
 function OpenAccount() {
     return ( 
-        <h1>OpenAccount</h1>
+    <div className='container'>
+        <div className='row'></div>
+        <div className='col-6'></div>
+        <div className='col-6'></div>
+    </div>
      );
 }
 
