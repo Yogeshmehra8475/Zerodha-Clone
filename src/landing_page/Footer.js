@@ -2,11 +2,12 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="cotainer border-top mt-5 pl-30px" style={{backgroundColor: "#00"}}>
-      <div className="row mt-5">
+    <footer style={{backgroundColor: "rgb(250, 250, 259"}}>
+    <div className="container border-top mt-5 " >
+      <div className="row mt-5 text-center ">
         <div className="col">
           <img src="media/images/logo.svg" style={{ width: "40%" }} />
-          <p>&copy; 2010 - 2025, Zerodha Broking Ltd. All rights reserved.</p>
+          <p>&copy; 2010 - 2025, Zerodha Broking Ltd.<br/> All rights reserved.</p>
         </div>
         <div className="col">
           <p>Company</p>
@@ -60,7 +61,7 @@ function Footer() {
           <br />
         </div>
       </div>
-      <div className="mt-5 text-muted" style={{fontSize:"14px"}}>
+      <div className="mt-5 text-body-tertiary" style={{fontSize:"10px"}}>
       <p>
         Zerodha Broking Ltd.: Member of NSE, BSE​ &​ MCX – SEBI Registration
         no.: INZ000031633 CDSL/NSDL: Depository services through Zerodha Broking
@@ -116,6 +117,7 @@ function Footer() {
       </p>
     </div>
     </div>
+    </footer>
   );
 }
 
