@@ -5,59 +5,69 @@ function Footer() {
     <footer style={{backgroundColor: "rgb(250, 250, 259"}}>
     <div className="container border-top mt-5 " >
       <div className="row mt-5 text-center ">
-        <div className="col">
-          <img src="media/images/logo.svg" style={{ width: "40%" }} />
+        <div className="col text-start">
+          <img src="media/images/logo.svg" className="mb-3" style={{ width: "40%" }} />
           <p>&copy; 2010 - 2025, Zerodha Broking Ltd.<br/> All rights reserved.</p>
+        <div className="fs-4 text-muted">
+          <img src="media/images/x-twitter.svg" alt="X-Twitter"/>
+          <i class="fa fa-facebook-official mx-3" aria-hidden="true"></i>
+          <i class="fa fa-instagram me-3" aria-hidden="true"></i>
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+          <br/>
+          <i class="fa fa-youtube-play me-3" aria-hidden="true"></i>
+          <i class="fa fa-whatsapp me-3" aria-hidden="true"></i>
+          <i class="fa fa-telegram" aria-hidden="true"></i>
+          </div>
         </div>
-        <div className="col">
+        <div className="col text-start">
           <p>Company</p>
-          <a href="">About</a>
+          <a href=""className="text-muted" style={{textDecoration:"none"}}>About</a>
           <br />
-          <a href="">Products</a>
+          <a href=""className="text-muted" style={{textDecoration:"none"}}>Products</a>
           <br />
-          <a href="">Pricing</a>
+          <a href=""className="text-muted" style={{textDecoration:"none"}}>Pricing</a>
           <br />
-          <a href="">Referral programme</a>
+          <a href=""className="text-muted" style={{textDecoration:"none"}}>Referral programme</a>
           <br />
-          <a href="">Careers</a>
+          <a href=""className="text-muted" style={{textDecoration:"none"}}>Careers</a>
           <br />
-          <a href="">Zerodha.tech</a>
+          <a href=""className="text-muted" style={{textDecoration:"none"}}>Zerodha.tech</a>
           <br />
-          <a href="">Open source</a>
+          <a href=""className="text-muted" style={{textDecoration:"none"}}>Open source</a>
           <br />
-          <a href="">Press & media</a>
+          <a href=""className="text-muted" style={{textDecoration:"none"}}>Press & media</a>
           <br />
-          <a href="">Zerodha Cares (CSR)</a>
+          <a href=""className="text-muted" style={{textDecoration:"none"}}>Zerodha Cares (CSR)</a>
           <br />
         </div>
-        <div className="col">
+        <div className="col text-start">
           <p>Support</p>
-          <a href=" ">Contact us</a>
+          <a href=""className="text-muted" style={{textDecoration:"none"}}>Contact us</a>
           <br />
-          <a href=" ">Support portal</a>
+          <a href=""className="text-muted" style={{textDecoration:"none"}}>Support portal</a>
           <br />
-          <a href=" ">Z-Connect blog</a>
+          <a href=""className="text-muted" style={{textDecoration:"none"}}>Z-Connect blog</a>
           <br />
-          <a href=" ">List of charges</a>
+          <a href=""className=" text-muted" style={{textDecoration:"none"}}>List of charges</a>
           <br />
-          <a href=" ">Downloads & resources</a>
+          <a href=""className=" text-muted" style={{textDecoration:"none"}}>Downloads & resources</a>
           <br />
-          <a href=" ">Videos</a>
+          <a href=""className=" text-muted" style={{textDecoration:"none"}}>Videos</a>
           <br />
-          <a href=" ">Market overview</a>
+          <a href=""className=" text-muted" style={{textDecoration:"none"}}>Market overview</a>
           <br />
-          <a href=" ">How to file a complaint?</a>
+          <a href=""className=" text-muted" style={{textDecoration:"none"}}>How to file a complaint?</a>
           <br />
-          <a href=" ">Status of your complaints</a>
+          <a href=""className=" text-muted" style={{textDecoration:"none"}}>Status of your complaints</a>
           <br />
         </div>
-        <div className="col">
+        <div className="col text-start">
           <p>Account</p>
-          <a href="">Open an account</a>
+          <a href=""className=" text-muted" style={{textDecoration:"none"}}>Open an account</a>
           <br />
-          <a href="">Fund transfer</a>
+          <a href=""className=" text-muted" style={{textDecoration:"none"}}>Fund transfer</a>
           <br />
-          <a href="">60 day challenge</a>
+          <a href=""className=" text-muted" style={{textDecoration:"none"}}>60 day challenge</a>
           <br />
         </div>
       </div>
