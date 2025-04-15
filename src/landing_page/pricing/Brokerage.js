@@ -10,17 +10,14 @@ function Brokerage() {
           </a>
           <ul style={{textAlign:"Left", lineHeight:"2.5", fontSize:"14px"}} className="text-muted ">
             <li>
-              Call & Trade and RMS auto-squareoff: Additional charges of 250 +
-              GST per orfer.
+              Call & Trade and RMS auto-squareoff: Additional charges of 250 + GST per orfer.
             </li>
             <li>Digital contract notes will be sent via e-mail. </li>
             <li>
-              Physical copies of contract notes, if required, shall be charged
-              220 per contract note. Courier charges apply.{" "}
+              Physical copies of contract notes, if required, shall be charged 220 per contract note. Courier charges apply.{" "}
             </li>
             <li>
-              For NRI account (non-PIS), 0.5% or 100 per executed order for
-              equity (whichever is lower).
+              For NRI account (non-PIS), 0.5% or 100 per executed order for equity (whichever is lower).
             </li>
             <li>
               For NRI account (PIS), 0.5% or 200 per executed order for equity
