@@ -22,7 +22,7 @@ function Hero() {
           <a href="" className="me-4">
             Intraday margins
           </a> <br/>
-          <a href="" className="me-4 mt-3">
+          <a href="" className="">
             Kite user manual
           </a>
        </div>
