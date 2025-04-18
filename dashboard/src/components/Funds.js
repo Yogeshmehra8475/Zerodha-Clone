@@ -2,7 +2,7 @@ import React from 'react';
 
 const Funds = () =>{
     return (
-        <div className="container"><h1>Funds</h1></div>
+      <h1>Funds</h1>
     );
 }
 
