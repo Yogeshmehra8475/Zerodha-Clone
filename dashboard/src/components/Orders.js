@@ -1,18 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
 
-const Orders = () => {
+function Orders() {
   return (
-    <div className="orders">
-      <div className="no-orders">
-        <p>You haven't placed any orders today</p>
+    <div>Orders</div>
+  )
+}
 
-        <Link to={"/"} className="btn">
-          Get started
-        </Link>
-      </div>
-    </div>
-  );
-};
-
-export default Orders;
+export default Orders
