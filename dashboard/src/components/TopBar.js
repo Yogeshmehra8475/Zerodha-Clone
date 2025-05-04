@@ -15,6 +15,11 @@ const TopBar = () => {
               <p className='index-points'>{100.2}</p>
               <p className='percent'></p>
             </div>
+            <div className='sensex'>
+              <p className='index'>SENSEX</p>
+              <p className='index-points'>{100.2}</p>
+              <p className='percent'></p>
+            </div>
           </div>
 
           <Menu/>
