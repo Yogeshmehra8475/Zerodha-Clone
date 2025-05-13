@@ -42,9 +42,6 @@ const Summary = () => {
             <h3 className="profit">
               1.55k <small>+5.20%</small>{" "}
             </h3>
-            <h3 className="profit">
-              1.55k <small>+5.20%</small>{" "}
-            </h3>
             <p>P&L</p>
           </div>
           <hr />
