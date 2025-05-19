@@ -1,11 +1,11 @@
 import React from 'react';
 import Dashboard from "./Dashboard";
-import TopBar from "./TopBar";
+import Topbar from "./Topbar";
 
 const Home = () => {
     return ( 
         <>
-            <TopBar/>
+            <Topbar/>
             <Dashboard/>
         </>
      );
