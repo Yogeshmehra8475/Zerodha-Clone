@@ -2,7 +2,7 @@ import React from "react";
 
 import Menu from "./Menu";
 
-const TopBar = () => {
+const Topbar = () => {
   return (
     <div className="topbar-container">
       <div className="indices-container">
@@ -22,4 +22,4 @@ const TopBar = () => {
   );
 };
 
-export default TopBar;
+export default Topbar;
