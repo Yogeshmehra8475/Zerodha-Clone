@@ -2,13 +2,13 @@ import React, { useState } from "react";
 
 import { Tooltip, Grow } from "@mui/material";
 
-import { KeyboardArrowDown, KeyboardArrowUp } from "@mui/icons-material";
+import { BarChartOutlined, KeyboardArrowDown, KeyboardArrowUp, MoreHoriz } from "@mui/icons-material";
 
 import { watchlist } from "../data/data";
 
 const WatchList = () => {
   return (
-    <div className="watchList-container">
+    <div className="watchlist-container">
       <div className="search-container">
         <input
           type="text"
@@ -21,8 +21,7 @@ const WatchList = () => {
       </div>
       <ul className="List">
         {watchlist.map((stock, index) => {
-            return(
-          <WatchListItem stock={stock} key={index} />)
+          return <WatchListItem stock={stock} key={index} />;
         })}
       </ul>
     </div>
@@ -55,6 +54,52 @@ const WatchListItem = ({ stock }) => {
           <span className="price">{stock.price}</span>
         </div>
       </div>
+      {showWatchlistActions && <WatchListActions uid={stock.name}/>}
     </li>
+  );
+};
+
+const WatchListActions = ({ uid }) => {
+  return (
+    <span className="actions">
+      <span>
+        <Tooltip
+          titilr="Buy (B)"
+          placement="top"
+          arrow
+          TransitionComponent={Grow}
+        >
+          <button className="buy">Buy</button>
+        </Tooltip>
+        <Tooltip
+          titilr="Sell (S)"
+          placement="top"
+          arrow
+          TransitionComponent={Grow}
+        >
+          <button className="sell">Sell</button>
+        </Tooltip>
+        <Tooltip
+          titilr="Analytics (A)"
+          placement="top"
+          arrow
+          TransitionComponent={Grow}
+        >
+            <button className="action">
+          <BarChartOutlined className="icon"/>
+            </button>
+        </Tooltip>
+        <Tooltip
+          titilr="More"
+          placement="top"
+          arrow
+          TransitionComponent={Grow}
+        >
+          <button className="action">
+          <MoreHoriz className="icon"/>
+            </button>
+        </Tooltip>
+      </span>
+    </span>
   );
 };
