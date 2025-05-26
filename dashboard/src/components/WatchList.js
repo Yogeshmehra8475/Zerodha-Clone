@@ -2,7 +2,12 @@ import React, { useState } from "react";
 
 import { Tooltip, Grow } from "@mui/material";
 
-import { BarChartOutlined, KeyboardArrowDown, KeyboardArrowUp, MoreHoriz } from "@mui/icons-material";
+import {
+  BarChartOutlined,
+  KeyboardArrowDown,
+  KeyboardArrowUp,
+  MoreHoriz,
+} from "@mui/icons-material";
 
 import { watchlist } from "../data/data";
 
@@ -54,7 +59,7 @@ const WatchListItem = ({ stock }) => {
           <span className="price">{stock.price}</span>
         </div>
       </div>
-      {showWatchlistActions && <WatchListActions uid={stock.name}/>}
+      {showWatchlistActions && <WatchListActions uid={stock.name} />}
     </li>
   );
 };
@@ -64,40 +69,35 @@ const WatchListActions = ({ uid }) => {
     <span className="actions">
       <span>
         <Tooltip
-          titilr="Buy (B)"
+          title="Buy (B)"
           placement="top"
           arrow
-          TransitionComponent={Grow}
+          slots={{transition :Grow}}
         >
           <button className="buy">Buy</button>
         </Tooltip>
         <Tooltip
-          titilr="Sell (S)"
+          title="Sell (S)"
           placement="top"
           arrow
-          TransitionComponent={Grow}
+          slots={{transition :Grow}}
         >
           <button className="sell">Sell</button>
         </Tooltip>
         <Tooltip
-          titilr="Analytics (A)"
+          title="Analytics (A)"
           placement="top"
           arrow
-          TransitionComponent={Grow}
-        >
-            <button className="action">
-          <BarChartOutlined className="icon"/>
-            </button>
-        </Tooltip>
-        <Tooltip
-          titilr="More"
-          placement="top"
-          arrow
-          TransitionComponent={Grow}
+          slots={{transition :Grow}}
         >
           <button className="action">
-          <MoreHoriz className="icon"/>
-            </button>
+            <BarChartOutlined className="icon" />
+          </button>
+        </Tooltip>
+        <Tooltip title="More" placement="top" arrow slots={{transition :Grow}}>
+          <button className="action">
+            <MoreHoriz className="icon" />
+          </button>
         </Tooltip>
       </span>
     </span>
