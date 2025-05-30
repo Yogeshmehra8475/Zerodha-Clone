@@ -1,4 +1,4 @@
-require("dotenv'=").config();
+require("dotenv").config();
 
 const express = require("express");
 const mongoose = require("mongoose");
@@ -9,7 +9,7 @@ const url = process.env.MONGO_URL;
 const app = express();
 
 app.listen(PORT, ()=>{
-   console.log("App Started!"); 
+  console.log("App Started!"); 
   mongoose.connect(url);
-  console.log("DB Connected!")
+  console.log("DB Connected!");
 });
