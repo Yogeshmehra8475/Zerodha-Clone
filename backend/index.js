@@ -11,5 +11,4 @@ const app = express();
 app.listen(PORT, ()=>{
   console.log("App Started!"); 
   mongoose.connect(url);
-  console.log("DB Connected!");
 });
