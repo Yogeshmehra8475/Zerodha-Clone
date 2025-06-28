@@ -244,11 +244,6 @@ code {
   color: rgb(72, 194, 55);
 }
 
-/* sudo selector */
-.item:hover {
-  cursor: pointer;
-}
-
 .menu-container {
   flex-basis: 68%;
   height: 100%;
@@ -472,10 +467,6 @@ hr {
   color: rgb(72, 194, 55);
 }
 
-/* sudo selector */
-.item:hover {
-  cursor: pointer;
-}
 
 .username h6 {
   font-size: 1.5rem;
@@ -677,13 +668,18 @@ hr {
   padding: 12px 10px 12px 14px;
   position: relative;
 }
+/* sudo selector */
+.item:hover {
+  cursor: pointer;
+}
+
 
 .item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-weight: 300;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   position: relative;
 }
 
